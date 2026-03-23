@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Главная страница</title>
+  <meta name="description" content="Главная страниа">
+  <meta name="keywords" content="">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:title" content="Главная страница">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image"
+    content= >
+  <meta name="twitter:card" content="summary_large_image">
+  <style id="inline-css">
+    blockquote,
+    body,
+    button,
+    code,
+    dd,
+    dl,
+    dt,
+    fieldset,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    html,
+    input,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    td,
+    textarea,
+    th,
+    ul {
+      padding: 0;
+      margin: 0;
+      font-weight: 400
+    }
+
+    ol,
+    ul {
+      list-style: none
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      border: none;
+      font-family: inherit;
+      color: inherit;
+      background: 0 0;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: 0
+    }
+
+    body,
+    html {
+      position: relative;
+      width: 100%;
+      min-width: 300px;
+      height: 100%;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.333;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: none;
+      -webkit-overflow-scrolling: touch;
+      word-wrap: break-word;
+      word-break: break-word
+    }
+
+    html {
+      -webkit-perspective: none !important
+    }
+
+    b,
+    strong {
+      font-weight: 700 !important
+    }
+
+    a {
+      color: inherit
+    }
+
+    .sb-body_overflow {
+      height: 100%;
+      overflow: hidden
+    }
+
+    .sb-body_overflow:after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 98;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(238, 145, 145, 0.8)
+    }
+
+    .sb-body_with-footer .site-wrapper {
+      box-sizing: border-box
+    }
+
+    .sb-body_hide-messenger {
+      overflow: hidden
+    }
+
+    .sb-body_hide-messenger .messenger-button {
+      display: none
+    }
+
+    .sb-padding-top_l {
+      padding-top: 72px
+    }
+
+    .sb-padding-top_m {
+      padding-top: 36px
+    }
+
+    .sb-padding-top_s {
+      padding-top: 20px
+    }
+
+    .sb-padding-bottom_l {
+      padding-bottom: 72px
+    }
+
+    .sb-padding-bottom_m {
+      padding-bottom: 36px
+    }
+
+    .sb-padding-bottom_s {
+      padding-bottom: 20px
+    }
+
+    .sb-hidden {
+      display: none !important
+    }
+
+    @media screen and (max-width:639px) {
+      .sb-hidden-mobile {
+        display: none !important
+      }
+    }
+
+    @media screen and (min-width:300px) {
+      .sb-hidden-mobile-min {
+        display: none !important
+      }
+    }
+
+    @media (min-width:480px) and (max-width:639px) {
+      .sb-hidden-mobile-interval {
+        display: none !important
+      }
+    }
+
+    @media screen and (max-width:959px) {
+
+      .sb-body_with-footer .sb-block_fullscreen:only-child,
+      .sb-body_with-footer .site-wrapper {
+        min-height: calc(100vh - 44px)
+      }
+
+      .sb-hidden-tablet {
+        display: none !important
+      }
+    }
+
+    @media screen and (min-width:640px) {
+      .sb-hidden-tablet-min {
+        display: none !important
+      }
+    }
+
+    @media (min-width:640px) and (max-width:959px) {
+      .sb-hidden-tablet-interval {
+        display: none !important
+      }
+    }
+
+    @media screen and (max-width:1359px) {
+      .sb-hidden-desktop {
+        display: none !important
+      }
+    }
+
+    @media screen and (min-width:960px) {
+
+      .sb-body_with-footer .sb-block_fullscreen:only-child,
+      .sb-body_with-footer .site-wrapper {
+        min-height: calc(100vh - 60px)
+      }
+
+      .sb-hidden-desktop-min {
+        display: none !important
+      }
+    }
+
+    @media (min-width:960px) and (max-width:1359px) {
+      .sb-hidden-desktop-interval {
+        display: none !important
+      }
+    }
+
+    @media screen and (min-width:1360px) {
+      .sb-hidden-desktop-lg-min {
+        display: none !important
+      }
+    }
+
+    .sb-opacity {
+      opacity: .4
+    }
+
+    .sb-align-center {
+      text-align: center
+    }
+
+    .sb-align-left {
+      text-align: left
+    }
+
+    .sb-pre-wrap {
+      white-space: pre-wrap
+    }
+
+    .sb-text-ellipsis-focus:focus {
+      text-overflow: clip !important
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-element.css">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-layout.css">
+  <link rel="preload" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-lazy.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-lazy.css"
+    media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-lazy.css">
+  </noscript>
+  <link rel="apple-touch-icon" sizes="128x128" href="https://s.tb.ru/images/favicons/tb.svg">
+  <link rel="shortcut icon" href="https://avatars.mds.yandex.net/i?id=7ba7599dc164683f9d7e0a22d4cfdeb5_l-5391120-images-thumbs&n=13">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=all&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&subset=all&display=swap">
+  <link rel="stylesheet" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/size-m.css">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/header-type-1.css">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/main-type-5.css">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/advantages-blocks-type-2.css">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/bevel-type-1.css">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/history-type-1.css" as="style"
+    onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/history-type-1.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/text-type-4.css" as="style"
+    onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/text-type-4.css" media="print"
+    onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/advantages-blocks-type-4.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/advantages-blocks-type-4.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/services-type-2.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/services-type-2.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/schedule-type-1.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/schedule-type-1.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/tariffs-table-type-1.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/tariffs-table-type-1.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/reviews-type-3.css" as="style"
+    onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/reviews-type-3.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/contacts-blocks-type-1.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/contacts-blocks-type-1.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer-customer-type-1.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer-customer-type-1.css"
+    media="print" onload="this.media='all'">
+  <link rel="preload" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer.css" media="print"
+    onload="this.media='all'">
+  <link rel="preload" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/popups.css"
+    as="style" onerror="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/popups.css"
+    media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/history-type-1.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/text-type-4.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/advantages-blocks-type-4.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/services-type-2.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/schedule-type-1.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/tariffs-table-type-1.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/reviews-type-3.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/contacts-blocks-type-1.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer-customer-type-1.css">
+    <link rel="stylesheet"
+      href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/blocks/footer.css">
+    <link rel="stylesheet" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/popups.css">
+  </noscript>
+  <link rel="stylesheet"
+    href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.932/style/styles-helpers.css">
+</head>
+
+<body class="sb-body sb-body_with-footer ubuntu__title open-sans-regular sb-content-size_m sb-buttons-border_round">
+  <div class="site-wrapper" tabindex="0">
+    
+      <div class="sb-background" style="background: #111111;"></div>
+      <div class="sb-container">
+        <div class="s-header-type-1__wrapper js-wrapper s-header-type-1__wrapper_right-align-links">
+          <div class="s-header-type-1__burger js-burger s-header-type-1__mark-links"><span
+              class="s-header-type-1__burger-line"></span></div>
+          
+          <div class="s-header-type-1__menu-wrapper js-menu">
+            <nav class="s-header-type-1__menu">
+              <div class="sb-background" style="background: #111111;"></div>
+              <ul  class="s-header-type-1__link-wrapper"
+            <li class="s-header-type-1__link-item sb-submenu-link"><a href="https://yandex.ru/video/preview/15678537772008949565"
+                    class="s-header-type-1__link sb-font-p3" style="color: rgb(0, 255, 76);"> Полезное Видео  </a></li>
+                <li class="s-header-type-1__link-item sb-submenu-link"><a href="https://ru.wikipedia.org/wiki/Здоровое_питание"
+                    class="s-header-type-1__link sb-font-p3" style="color: rgb(0, 255, 55);"> Викепедие  </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="main" id="main"
+      class="s-main-type-5 sb-block sb-block_fullscreen s-main-type-5_right sb-text-dark">
+      <div class="sb-background sb-background_clear s-main-type-5__content-background" style="background: #00ff0d;">
+      </div>
+      <div class="s-main-type-5__additional">
+        <div class="s-main-type-5__additional-wrapper">
+          <div class="sb-background-image sb-background sb-background_clear s-main-type-5__background"
+            style="background-image: url(static/images/img_1/IMG_20260323_211825_348.jpg);">
+            <div class="sb-background-overlay" style="opacity: 0.3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sb-container s-main-type-5__container sb-m-2-top sb-m-1-bottom">
+        <div class="sb-row sb-row_center">
+          <div
+            class="sb-col_lg-5 sb-col_md-5 sb-col_sm-12 sb-col_xs-12 sb-m-clear-bottom sb-col-offset_lg-7 sb-col-offset_md-7">
+            <div class="sb-font-p3 sb-m-22-bottom sb-text-opacity">Онлайн-курс
+            </div>
+            <h2 class="sb-font-title sb-font-h3 sb-m-14-bottom">Практическая нутрициология для&#160;долгой жизни</h2>
+            <div class="sb-font-p3 sb-m-8-bottom sb-text-opacity">Скорректируйте питание, чтобы восстановить здоровье
+              и&#160;снизить вес в минимальные сроки
+
+              <div><br></div>
+            </div>
+            <div class="s-main-type-5__buttons"><a href="#services"
+                class="s-main-type-5__button sb-button-primary sb-m-19-bottom sb-button-scheme-dark"
+                style="background-color: rgb(255, 153, 0);">Оставить заявку</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="advantages-blocks" id="advantages-blocks"
+      class="s-advantages-blocks-type-2 sb-text-dark sb-padding-top_l sb-padding-bottom_l">
+      <div class="sb-background sb-background_clear" style="background: #007efb;"></div>
+      <div class="sb-container sb-m-clear-bottom">
+        <div class="sb-row sb-m-6-bottom">
+          <div class="sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-col_lg-10">
+            <h2 class="sb-font-title sb-font-h2">Вам подойдет этот курс, если вы
+            </h2>
+          </div>
+        </div>
+        <div class="s-advantages-blocks-type-2__list">
+          <div class="sb-row-square">
+            <div class="s-advantages-blocks-type-2__col sb-col_sm-6 sb-col_xs-12 sb-col_lg-3 sb-col_md-4">
+              <div
+                class="s-advantages-blocks-type-2__wrapper sb-m-clear-bottom sb-text-dark s-advantages-blocks-type-2__wrapper_padding">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-2__image sb-m-17-bottom">
+                  <div class="sb-image-square"><img class=""
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks/c5fc5ff0-3add-431d-b7a4-1bb420a983ee/c5fc5ff0-3add-431d-b7a4-1bb420a983ee-4871735.png"
+                      alt="Изображение"></div>
+                </div>
+                <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Чувствуете дискомфорт после еды
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-2__col sb-col_sm-6 sb-col_xs-12 sb-col_lg-3 sb-col_md-4">
+              <div
+                class="s-advantages-blocks-type-2__wrapper sb-m-clear-bottom sb-text-dark s-advantages-blocks-type-2__wrapper_padding">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-2__image sb-m-17-bottom">
+                  <div class="sb-image-square"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks/74a68384-c437-449f-86bf-5147bb441f20/74a68384-c437-449f-86bf-5147bb441f20-4871737.png"
+                      alt="Изображение"></div>
+                </div>
+                <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Быстро утомляетесь без&#160;видимых причин
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-2__col sb-col_sm-6 sb-col_xs-12 sb-col_lg-3 sb-col_md-4">
+              <div
+                class="s-advantages-blocks-type-2__wrapper sb-m-clear-bottom sb-text-dark s-advantages-blocks-type-2__wrapper_padding">
+                <div class="sb-background" style="background: #8a57e7"></div>
+                <div class="s-advantages-blocks-type-2__image sb-m-17-bottom">
+                  <div class="sb-image-square"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks/a54d85c0-212a-4389-b8cb-949e1736c88a/a54d85c0-212a-4389-b8cb-949e1736c88a-4871738.png"
+                      alt="Изображение"></div>
+                </div>
+                <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Не&#160;можете похудеть
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-2__col sb-col_sm-6 sb-col_xs-12 sb-col_lg-3 sb-col_md-4">
+              <div
+                class="s-advantages-blocks-type-2__wrapper sb-m-clear-bottom sb-text-dark s-advantages-blocks-type-2__wrapper_padding">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-2__image sb-m-17-bottom">
+                  <div class="sb-image-square"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks/735d2522-caf3-4efe-a341-d3917f91cb7d/735d2522-caf3-4efe-a341-d3917f91cb7d-4871756.png"
+                      alt="Изображение"></div>
+                </div>
+                <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Страдаете от проблем с&#160;ЖКТ
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="bevel" id="bevel-3" class="s-bevel-type-1 s-bevel-type-1_direction-right">
+      <div class="sb-background sb-background_top-background" style="background: #00f729;"></div>
+      <div class="sb-background sb-background_bottom-background" style="background: #000000;"></div>
+    </section>
+    <section data-type="history" id="history"
+      class="s-history-type-1 sb-text-dark sb-padding-top_l sb-padding-bottom_s">
+      <div class="sb-background" style="background: #3f3dec;"></div>
+      <div class="sb-container sb-m-clear-bottom">
+        <div class="sb-row s-history-type-1__item sb-m-3-bottom sb-m-clear-bottom sb-m-clear-top">
+          <div class="sb-col_sm-12 sb-col_xs-12 sb-hidden-desktop-min">
+            <h2 class="sb-font-h2 sb-font-title s-history-type-1__title">Об авторе</h2>
+          </div>
+          <div
+            class="sb-col_lg-5 sb-col_md-6 sb-col_sm-12 sb-col_xs-12 sb-m-7-bottom sb-m-3-top s-history-type-1__image-wrapper">
+            <div class="sb-image-ratio-1x1"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                src="/static/images/img_1/photo_2026-03-18_19-33-26.jpg"
+                alt="Изображение"></div>
+          </div>
+          <div class="sb-col_sm-12 sb-col_xs-12 sb-col_lg-7 sb-col_md-6">
+            <div class="s-history-type-1__text sb-m-clear-bottom">
+              <h2 class="sb-font-h2 sb-font-title s-history-type-1__title sb-hidden-tablet sb-m-12-bottom">Что говорят эксперты?
+              </h2>
+              <div class="sb-m-clear-bottom">
+                <h3 class="sb-font-h4 sb-font-title sb-m-14-bottom">Здравствуйте. Меня зовут Vladimir Prime Эксперты по питанию подчёркивают разнообразие, сбалансированность и умеренность как ключевые принципы здорового рациона. Это означает:
+                              Разнообразие — включение в меню широкого спектра продуктов из разных групп (фрукты, овощи, злаки, белки) для получения всех необходимых нутриентов. 
+                            Сбалансированность — соответствие потребления калорий энергозатратам организма, правильное соотношение белков, жиров и углеводов. 
+                            Умеренность — ограничение потребления соли, сахара, вредных жиров и алкоголя</h3>
+                <div class="sb-font-p2 sb-text-opacity"><br></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="text" id="text"
+      class="s-text-type-4 s-text-type-4_important sb-text-dark sb-padding-top_s sb-padding-bottom_l">
+      <div class="sb-background" style="background: #703aee;"></div>
+      <div class="sb-container">
+        <div class="sb-row sb-m-clear-bottom">
+          <div class="s-text-type-4__line sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12">
+            <h2 class="s-text-type-4__title sb-font-title sb-font-h3 sb-m-14-bottom">Про привычки</h2>
+          </div>
+          <div
+            class="s-text-type-4__column s-text-type-4__line sb-m-14-bottom sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12">
+            <div class="s-text-type-4__wrapper">
+              <div class="s-text-type-4__description sb-font-p2">Наши негативные пищевые привычки сформированы с
+                детства, в силу ограниченности выбора продуктов. На текущий момент у нас есть возможность исправить
+                ситуацию и продлить молодость, красоту и здоровье</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="bevel" id="bevel-4" class="s-bevel-type-1 s-bevel-type-1_direction-right">
+      <div class="sb-background sb-background_top-background" style="background: #00f729;"></div>
+      <div class="sb-background sb-background_bottom-background" style="background: #000000;"></div>
+    </section>
+    <section data-type="advantages-blocks" id="advantages-blocks-2"
+      class="s-advantages-blocks-type-4 s-advantages-blocks-type-4_with-image s-advantages-blocks-type-4_with-background sb-text-dark sb-padding-top_l sb-padding-bottom_l">
+      <div class="sb-background sb-background_clear" style="background: #064686;"></div>
+      <div class="sb-container sb-m-clear-bottom">
+        <div class="sb-row sb-m-6-bottom">
+          <div class="sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12">
+            <h2 class="sb-font-title sb-font-h2">Что вы получите после обучения
+            </h2>
+          </div>
+        </div>
+        <div class="s-advantages-blocks-type-4__list">
+          <div class="sb-row-square">
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background: #093db7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/e87f7071-7fd1-4248-92fb-6392df9832a2/e87f7071-7fd1-4248-92fb-6392df9832a2-4870377.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Cоставите сбалансированный рацион
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background:#8a57e7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/16c2d04a-60f2-4e7a-8adc-275b76770b88/16c2d04a-60f2-4e7a-8adc-275b76770b88-4870387.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Предупредите хронические заболевания
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/03f35de9-f661-4fe6-a518-6dd4001d1b29/03f35de9-f661-4fe6-a518-6dd4001d1b29-4870388.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Восстановите полезную флору кишечника
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/100ade37-eb75-4260-9736-950c4ed5c13c/100ade37-eb75-4260-9736-950c4ed5c13c-4870394.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Составите полезный рацион для семьи
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/141d2373-8fa8-43b5-ae22-4978535640ca/141d2373-8fa8-43b5-ae22-4978535640ca-4870396.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Станете энергичнее и&#160;избавитесь
+                      от&#160;сонливости
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-advantages-blocks-type-4__item sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+              <div class="s-advantages-blocks-type-4__wrapper sb-m-clear-bottom sb-text-dark">
+                <div class="sb-background" style="background: #8a57e7;"></div>
+                <div class="s-advantages-blocks-type-4__image-wrapper">
+                  <div class="s-advantages-blocks-type-4__image"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                      src="https://3ec19d26-ac1a-4d5d-9cb6-be09a594ab33.selstorage.ru/tajeymm/advantages-blocks-2/2c43a1e2-e78c-4f0b-9ff6-f50493325fe6/2c43a1e2-e78c-4f0b-9ff6-f50493325fe6-4870397.jpeg"
+                      alt="Изображение"></div>
+                </div>
+                <div class="s-advantages-blocks-type-4__text-wrapper sb-text-dark">
+                  <div class="sb-background" style="background: #8a57e7;"></div>
+                  <div class="s-advantages-blocks-type-4__text sb-m-clear-bottom">
+                    <div class="sb-font-title sb-font-h5 sb-m-21-bottom">Улучшите состояние кожи
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="bevel" id="bevel-5" class="s-bevel-type-1 s-bevel-type-1_direction-right">
+      <div class="sb-background sb-background_top-background" style="background: #09ff00;"></div>
+      <div class="sb-background sb-background_bottom-background" style="background: #000000;"></div>
+    </section>
+    <section data-type="services" data-subtype="type-2" id="services"
+      class="s-services-type-2 sb-text-dark sb-padding-top_l sb-padding-bottom_l">
+      <div class="sb-background" style="background: #b8afaf;"></div>
+      <div class="sb-container sb-m-clear-bottom">
+        <div class="sb-row sb-m-3-bottom">
+          <h2 class="sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-font-h2 sb-font-title">Формат обучения</h2>
+        </div>
+        <div class="sb-row sb-m-clear-bottom sb-m-3-top-minus">
+          <div class="s-services-type-2__item sb-m-3-top sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+            <div class="s-services-type-2__item-content sb-m-clear-top sb-m-clear-bottom">
+              <div class="s-services-type-2__info sb-m-15-bottom sb-m-clear-bottom">
+                <h3 class="sb-font-h5 sb-font-title sb-m-14-bottom sb-pre-wrap sb-skeleton__title"
+                  data-goods-field="title">Видео-уроки</h3>
+                <div class="sb-font-p2 sb-text-opacity sb-pre-wrap sb-skeleton__text" data-goods-field="description">Вы
+                  получаете ссылку на новые уроки каждую неделю</div>
+              </div>
+              <div class="s-services-type-2__link"><a href=""
+                  class="sb-link sb-font-p3 sb-skeleton__link" target="_blank"> Узнать подробнее </a></div>
+            </div>
+          </div>
+          <div class="s-services-type-2__item sb-m-3-top sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+            <div class="s-services-type-2__item-content sb-m-clear-top sb-m-clear-bottom">
+              <div class="s-services-type-2__info sb-m-15-bottom sb-m-clear-bottom">
+                <h3 class="sb-font-h5 sb-font-title sb-m-14-bottom sb-pre-wrap sb-skeleton__title"
+                  data-goods-field="title">Домашние задания</h3>
+                <div class="sb-font-p2 sb-text-opacity sb-pre-wrap sb-skeleton__text" data-goods-field="description">
+                  Помогают закрепить знания после каждого урока</div>
+              </div>
+              <div class="s-services-type-2__link"><a href=""
+                  class="sb-link sb-font-p3 sb-skeleton__link" target="_blank"> Узнать подробнее </a></div>
+            </div>
+          </div>
+          <div class="s-services-type-2__item sb-m-3-top sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+            <div class="s-services-type-2__item-content sb-m-clear-top sb-m-clear-bottom">
+              <div class="s-services-type-2__info sb-m-15-bottom sb-m-clear-bottom">
+                <h3 class="sb-font-h5 sb-font-title sb-m-14-bottom sb-pre-wrap sb-skeleton__title"
+                  data-goods-field="title">Перерыв</h3>
+                <div class="sb-font-p2 sb-text-opacity sb-pre-wrap sb-skeleton__text" data-goods-field="description">
+                  Общайтесь с участниками курса и преподавателем</div>
+              </div>
+              <div class="s-services-type-2__link"><a href="1111"
+                  class="sb-link sb-font-p3 sb-skeleton__link" target="_blank"> Узнать подробнее </a></div>
+            </div>
+          </div>
+          <div class="s-services-type-2__item sb-m-3-top sb-col_lg-4 sb-col_md-4 sb-col_sm-6 sb-col_xs-12">
+            <div class="s-services-type-2__item-content sb-m-clear-top sb-m-clear-bottom">
+              <div class="s-services-type-2__info sb-m-15-bottom sb-m-clear-bottom">
+                
+              <div class="s-services-type-2__info sb-m-15-bottom sb-m-clear-bottom">
+                <h3  class="sb-font-h5 sb-font-title sb-m-14-bottom sb-pre-wrap sb-skeleton__title"
+                  data-goods-field="title"> ИИ помощник</h3>
+                <div class="sb-font-p2 sb-text-opacity sb-pre-wrap sb-skeleton__text" data-goods-field="description">
+                   ответит на любые вопросы </div>
+              </div>
+              <div class="s-services-type-2__link"><a href="https://alice.yandex.ru/"
+                  class="sb-link sb-font-p3 sb-skeleton__link" target="_blank"> Узнать подробнее </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="bevel" id="bevel-2" class="s-bevel-type-1 s-bevel-type-1_direction-right">
+      <div class="sb-background sb-background_top-background" style="background: #000000;"></div>
+      <div class="sb-background sb-background_bottom-background" style="background: #FFEC89;"></div>
+    </section>
+    <section data-type="schedule" id="schedule-2"
+      class="s-schedule-type-1 sb-text-dark sb-padding-top_l sb-padding-bottom_l">
+      <div class="sb-background" style="background: #FFEC89;"></div>
+      <div class="sb-container">
+        <div class="sb-row s-schedule-type-1__container sb-m-clear-bottom">
+          <div class="sb-col_12 sb-m-3-bottom">
+            <div class="sb-row sb-m-clear-bottom">
+              <h2 class="sb-col_lg-10 sb-col_md-12 sb-col_sm-12 sb-col_xs-12 sb-font-h2 sb-font-title sb-m-12-bottom">
+                Программа курса
+              </h2>
+            </div>
+          </div>
+          <div class="s-schedule-type-1__list sb-col_12">
+            <div class="sb-row s-schedule-type-1__item sb-m-clear-bottom s-schedule-type-1__line sb-color-border">
+              <div class="sb-col_lg-4 sb-col_md-4 sb-col_sm-4 sb-col_xs-12 s-schedule-type-1__date sb-font-h4">Неделя 1
+              </div>
+              <div
+                class="s-schedule-type-1__item-text sb-m-clear-bottom sb-col_lg-6 sb-col_md-8 sb-col_sm-8 sb-col_xs-12">
+                <div class="sb-font-p3">Анатомия пищеварительного тракта</div>
+              </div>
+            </div>
+            <div class="sb-row s-schedule-type-1__item sb-m-clear-bottom s-schedule-type-1__line sb-color-border">
+              <div class="sb-col_lg-4 sb-col_md-4 sb-col_sm-4 sb-col_xs-12 s-schedule-type-1__date sb-font-h4">Неделя 2
+              </div>
+              <div
+                class="s-schedule-type-1__item-text sb-m-clear-bottom sb-col_lg-6 sb-col_md-8 sb-col_sm-8 sb-col_xs-12">
+                <div class="sb-font-p3">Основные макро- и микроэлементы</div>
+              </div>
+            </div>
+            <div class="sb-row s-schedule-type-1__item sb-m-clear-bottom s-schedule-type-1__line sb-color-border">
+              <div class="sb-col_lg-4 sb-col_md-4 sb-col_sm-4 sb-col_xs-12 s-schedule-type-1__date sb-font-h4">Неделя 3
+              </div>
+              <div
+                class="s-schedule-type-1__item-text sb-m-clear-bottom sb-col_lg-6 sb-col_md-8 sb-col_sm-8 sb-col_xs-12">
+                <div class="sb-font-p3">Основные продукты питания — как правильно выбирать</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-type="bevel" id="bevel" class="s-bevel-type-1 s-bevel-type-1_direction-right">
+      <div class="sb-background sb-background_top-background" style="background: #FFEC89;"></div>
+      <div class="sb-background sb-background_bottom-background" style="background: #00ff2a;"></div>
+    </section>
+    <section data-type="tariffs-table" id="numexsx"
+      class="s-tariffs-table-type-1 sb-text-dark sb-align-center sb-padding-top_s sb-padding-bottom_l">
+      <div class="sb-background" style="background: #000000;"></div>
+ 
+
+</body>
+
+</html>
